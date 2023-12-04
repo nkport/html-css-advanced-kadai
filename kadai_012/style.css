@@ -305,7 +305,6 @@ h3 {
   color: #2710d5;
   font-size: 19px;
   margin: 80px 0 0 0;
-  Ï
 }
 
 .vision-box>span>h4::first-letter {
@@ -319,6 +318,45 @@ h3 {
 
 .vision-box>span>p {
   margin: 10px 0 0 0;
+}
+
+/* CASES */
+#cases {
+  width: 100%;
+  margin: 40px 0;
+}
+
+#cases > ul {
+  display: flex;
+  list-style: none;
+}
+
+#cases > ul > li {
+  flex-basis: 33%;
+  margin: 20px;
+}
+
+.case-card {
+  min-height: 400px;
+  background-color: #fff;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, .2);
+}
+
+.case-img {
+  width: 100%;
+}
+
+.case-info {
+  padding: 10px 20px;
+}
+
+.case-name {
+  color: #2710d5;
+  font-size: 19px;
+}
+
+.case-content {
+  font-size: 14px;
 }
 
 /* 会社概要 */
@@ -459,21 +497,26 @@ footer {
 #footer-link {
   margin-bottom: 50px;
 }
-#footer-link > a {
+
+#footer-link>a {
   text-decoration: none;
   margin: 10px;
 }
-#footer-link > a:link {
+
+#footer-link>a:link {
   color: #ffffff;
 }
-#footer-link > a:visited {
+
+#footer-link>a:visited {
   color: #ffffff;
 }
-#footer-link > a:hover {
+
+#footer-link>a:hover {
   color: #ffffff;
   text-decoration: underline;
 }
-#footer-link > a:active {
+
+#footer-link>a:active {
   color: #ffffff;
 }
 
@@ -482,7 +525,7 @@ footer {
   width: 100%;
 }
 
-#sns-footer > a {
+#sns-footer>a {
   margin-right: 30px;
 }
 
