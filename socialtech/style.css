@@ -1,0 +1,475 @@
+ /*================
+ 共通スタイル 
+ =================*/
+ body {
+     font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+ }
+
+ p {
+     font-size: 15px;
+ }
+
+ h2 {
+     margin: 40px 0 0 0;
+ }
+
+ h2::after {
+     content: url("images/line.png");
+     margin-left: 10px;
+ }
+
+ h3 {
+     font-size: 27px;
+ }
+
+ /*================
+ PC用のスタイル 
+=================*/
+ /* 横幅設定 */
+ body {
+     max-width: 1080px;
+     min-width: 960px;
+     margin: 0 auto;
+ }
+
+ /*================
+ コンテンツ 
+=================*/
+
+ /* ヘッダー */
+ header {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ /* ナビゲーション */
+ #nav-pc {
+     padding-top: 15px;
+     font-size: 14px;
+     text-align: right;
+ }
+
+ #nav-pc>a {
+     margin-left: 20px;
+     text-decoration: none;
+ }
+
+ #nav-pc>a:link {
+     color: #0d0d0d;
+ }
+
+ #nav-pc>a:visited {
+     color: #0d0d0d;
+ }
+
+ #nav-pc>a:hover {
+     color: #0d0d0d;
+     text-decoration: underline;
+ }
+
+ #nav-pc>a:active {
+     color: #0d0d0d;
+     text-decoration: underline;
+ }
+
+ /* メインヴィジュアル */
+ #main-visual {
+     position: relative;
+     height: 400px;
+ }
+
+ #main-visual>img {
+     position: absolute;
+     top: 0;
+     right: 0;
+     z-index: 10;
+     max-width: 620px;
+     border-radius: 476px 0 0 0;
+ }
+
+ #main-message {
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: 15;
+     width: 100%;
+     height: 100%;
+     max-width: 620px;
+     border-radius: 0 0 476px 0;
+     background-color: #2710d5;
+     color: #fff;
+ }
+
+ #main-message>h1 {
+     margin: 100px 0 0 50px;
+     font-weight: bold;
+     font-size: 60px;
+ }
+
+ #main-message>p {
+     margin: 0 0 0 50px;
+     font-size: 28px;
+ }
+
+ /* ミッション */
+ #mission {
+     width: 100%;
+     margin: 80px auto;
+ }
+
+ #mission-flex {
+     display: flex;
+     width: 100%;
+ }
+
+ #mission-flex>div {
+     width: 50%;
+     margin: 20px;
+ }
+
+ #mission-photo {
+     width: 100%;
+ }
+
+ #mission #s2dgs {
+     width: 100%;
+     margin-top: 50px;
+ }
+
+ /* プロダクト */
+ #product {
+     margin: 80px 0;
+     padding: 10px 40px 0;
+     background-color: #fafafa;
+ }
+
+ #product>div {
+     display: flex;
+     margin-top: 40px;
+ }
+
+ #product-left {
+     width: 50%;
+     margin-right: 20px;
+ }
+
+ #product-right {
+     width: 50%;
+     margin-top: 80px;
+     margin-left: 20px;
+ }
+
+ #product-left>div {
+     position: relative;
+     height: 480px;
+     margin-right: 20px;
+ }
+
+ #product-right>div {
+     position: relative;
+     height: 480px;
+     margin-left: 20px;
+ }
+
+ .product-photo {
+     width: 100%;
+ }
+
+ .product-explain {
+     position: absolute;
+     left: 0;
+     top: 280px;
+     margin: 0 40px;
+     padding: 20px;
+     background-color: #fff;
+     box-shadow: 5px 5px 10px rgba(0, 0, 0, .05);
+ }
+
+ .product-explain>span {
+     margin: 0;
+     color: #2710d5;
+     font-weight: bold;
+     font-size: 16px;
+ }
+
+ .product-explain>h3 {
+     margin: 5px 0;
+     font-size: 20px;
+ }
+
+ .product-explain>p {
+     margin: 0;
+     font-size: 14px;
+ }
+
+ #product-more {
+     margin: 0 auto -42px;
+ }
+
+ /* ABOUT US */
+ #aboutus {
+     margin: 80px auto;
+ }
+
+ #aboutus>div {
+     display: flex;
+ }
+
+ .culture-img {
+     width: 100%;
+     align-self: flex-start;
+ }
+
+ .culture-img2 {
+     margin-top: 50px;
+     width: 100%;
+ }
+
+ .culture-table {
+     margin-right: 50px;
+ }
+
+ .culture-num {
+     font-size: 80px;
+     color: #2710d5;
+     margin: 0 20px 0 0;
+ }
+
+ .culture-en {
+     color: #2710d5;
+     font-weight: bold;
+     font-size: 24px;
+     display: block;
+ }
+
+ .culture-jp {
+     font-size: 28px;
+     font-weight: bold;
+ }
+
+ .culture-description {
+     margin: 0;
+ }
+
+ /* ヴィジョン */
+ #vision {
+     margin: 80px auto;
+ }
+
+ #vision>div {
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+     flex-wrap: wrap;
+ }
+
+ .vision-box {
+     position: relative;
+     width: 300px;
+     height: 300px;
+     margin-bottom: 30px;
+ }
+
+ .vision-box>img {
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: 30;
+     width: 100%;
+     height: auto;
+ }
+
+ .vision-box>span {
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: 31;
+     margin-right: 20px;
+ }
+
+ .vision-box>span>h4 {
+     margin: 80px 0 0;
+     color: #2710d5;
+     font-size: 19px;
+ }
+
+ .vision-box>span>h4::first-letter {
+     font-size: 40px;
+ }
+
+ .vision-box>span>h5 {
+     margin: 0;
+     font-size: 20px;
+ }
+
+ .vision-box>span>p {
+     margin-top: 10px;
+ }
+
+ /* 会社概要 */
+ #company {
+     margin: 80px auto;
+ }
+
+ #company-table {
+     width: 100%;
+ }
+
+ .tableheader {
+     width: 100px;
+     padding: 20px;
+     border-bottom-width: 1px;
+     border-bottom-style: solid;
+     border-bottom-color: #2710d5;
+     text-align: left;
+ }
+
+ .tableheader-first {
+     width: 100px;
+     padding: 20px;
+     border-bottom-width: 1px;
+     border-bottom-style: solid;
+     border-bottom-color: #2710d5;
+     border-top-color: #2710d5;
+     border-top-style: solid;
+     border-top-width: 1px;
+     text-align: left;
+ }
+
+ .cell {
+     padding: 30px;
+     border-bottom-width: 1px;
+     border-bottom-style: solid;
+     border-bottom-color: #ececec;
+ }
+
+ .cell-first {
+     padding: 30px;
+     border-top-width: 1px;
+     border-top-style: solid;
+     border-top-color: #ececec;
+     border-bottom-width: 1px;
+     border-bottom-style: solid;
+     border-bottom-color: #ececec;
+ }
+
+ #company>iframe {
+     margin-top: 40px;
+     width: 100%;
+     height: 368px;
+ }
+
+ /* お問い合わせ */
+ #contact {
+     margin: 80px auto;
+ }
+
+ #contact>form>div {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     padding-bottom: 30px;
+ }
+
+ .contact-heading {
+     align-self: center;
+     width: 240px;
+ }
+
+ .contact-label {
+     font-weight: bold;
+ }
+
+ .contact-span {
+     margin: 0 0 0 20px;
+     color: #ce2222;
+     font-weight: bold;
+ }
+
+ .contact-textbox {
+     width: 400px;
+     height: 56px;
+     border-top: 0;
+     border-left: 0;
+     border-right: 0;
+     border-bottom-width: 1px;
+     border-bottom-style: solid;
+     border-bottom-color: #707070;
+     background-color: #fafafa;
+ }
+
+ .contact-textarea {
+     width: 400px;
+     height: 200px;
+     border-top: 0;
+     border-left: 0;
+     border-right: 0;
+     border-bottom-width: 1px;
+     border-bottom-style: solid;
+     border-bottom-color: #707070;
+     background-color: #fafafa;
+ }
+
+ details {
+     width: 700px;
+ }
+
+ details>div {
+     padding: 20px;
+     background-color: #fafafa;
+ }
+
+ details>div>span {
+     font-weight: bold;
+ }
+
+ /* フッター */
+ footer {
+     padding: 80px 80px 30px 80px;
+     background-color: #0d0d0d;
+     text-align: center;
+ }
+
+ #footer-logo {
+     margin-bottom: 30px;
+ }
+
+ #footer-link {
+     margin-bottom: 50px;
+ }
+
+ #footer-link>a {
+     margin: 10px;
+     text-decoration: none;
+ }
+
+ #footer-link>a:link {
+     color: #fff;
+ }
+
+ #footer-link>a:visited {
+     color: #fff;
+ }
+
+ #footer-link>a:hover {
+     color: #fff;
+     text-decoration: underline;
+ }
+
+ #footer-link>a:active {
+     color: #fff;
+ }
+
+ #sns-footer {
+     width: 100%;
+     text-align: left;
+ }
+
+ #sns-footer>a {
+     margin-right: 30px;
+ }
+
+ #copyright {
+     float: right;
+     color: #fff;
+ }
